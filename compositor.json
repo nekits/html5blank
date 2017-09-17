@@ -1,0 +1,101 @@
+{
+  "name": "nekits/html5blank",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "еуы",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://html5blank.com",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/nekits/html5blank",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/HTML5Blank",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "html5blank",
+      "subhead": "Powerful shell for rapidly building your WordPress projects",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "html5blank: Powerful shell for rapidly building your WordPress projects",
+          "url": "http://html5blank.com"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "nekits",
+          "repo": "html5blank"
+        }
+      ],
+      "text": "v1.5.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1><a href=\"http://html5blank.com\">HTML5 Blank</a></h1>\n<p>Powerful shell for rapidly deploying your WordPress projects.</p>\n<ul>\n<li>Project: <a href=\"https://github.com/toddmotto/html5blank\">github.com/toddmotto/html5blank</a></li>\n<li>Website: <a href=\"http://html5blank.com\">html5blank.com</a></li>\n<li>Twitter: <a href=\"http://twitter.com/html5blank\">@html5blank</a></li>\n<li>Author : <a href=\"http://toddmotto.com\">Todd Motto</a> // <a href=\"http://twitter.com/toddmotto\">@toddmotto</a></li>\n</ul>\n<h2>Getting Started with HTML5 Blank</h2>\n<ul>\n<li>Go to the Wordpress&apos; theme folder (<code>.../wp-content/themes</code>)</li>\n<li>In CLI, run: <code>git clone https://github.com/toddmotto/html5blank.git</code></li>\n<li><code>cd html5blank</code> and then <code>npm install</code> and then <code>bower install</code> (you&apos;ll need gulp install as well)</li>\n<li><code>gulp watch</code> will enable <code>livereload</code> and development version</li>\n<li><code>gulp build</code> for distribute version with minified <code>js</code> and <code>css</code> files</li>\n<li>NOTE: <code>src</code> and <code>dist</code> folders can live happily together inside the same folder (<code>html5blank</code>) that in the <code>theme</code> folder. You&apos;ll have two different instances of the theme within <code>Appearance &gt; Themes</code> panel inside the admin</li>\n</ul>\n<h2>Get involved! Make HTML5 Blank better</h2>\n<p>There are a few ways to get involved, submit a Pull Request, or submit a comment on the website - <a href=\"http://html5blank.com\">html5blank.com</a></p>\n<h2>Features</h2>\n<h3>HTML5</h3>\n<ul>\n<li>Basic Semantic HTML5 Markup</li>\n<li>W3C Valid Code Foundations</li>\n<li>Responsive Ready, ViewPort meta data</li>\n<li>HTML Class support for IE7, IE8, IE9 Conditionals (HTML5 Boilerplate)</li>\n<li>Clean, neatly organised code, with PHP annotations</li>\n</ul>\n<h3>jQuery + JavaScript</h3>\n<ul>\n<li>Replaced built-in WordPress enqueue with Google CDN</li>\n<li>Protocol relative jQuery if Google CDN offline (HTML5 Boilerplate)</li>\n<li>Conditionizr for cross-platform/device detects and enhancements</li>\n<li>Modernizr feature detection, HTML5 element support for legacy, progressive enhancement (HTML5 Boilerplate)</li>\n<li>DOM Ready JavaScript file setup (scripts.js) for instant JavaScript development</li>\n<li>JavaScript files enqueued using WordPress functions into wp_head</li>\n</ul>\n<h3>CSS3</h3>\n<ul>\n<li>HTML5 Boilerplate reset</li>\n<li>Media Queries framework for instant development using @media</li>\n<li>@font-face empty framework with Fonts folder setup ready for new custom fonts</li>\n<li>CSS3 custom selection styles</li>\n<li>Inline print styles (HTML5 Boilerplate)</li>\n<li>Body element config, including Optimize Legibility for kerning and font-smoothing</li>\n<li>Replaced focus styles to avoid blue blur in field elements, replaced with border</li>\n<li>Stylesheet enqueued using WordPress functions into wp_head</li>\n</ul>\n<h3>Preloaded Functions (functions.php)</h3>\n<ul>\n<li>Enqueue Scripts functions setup</li>\n<li>Enqueue Styles functions setup</li>\n<li>Dynamic WordPress Menu Navigation Support, preloaded with 3 Dynamic menus</li>\n<li>Cleaned up dynamic nav output (Remove outer &apos;div&apos;)</li>\n<li>Remove all injected classes from nav items, ID&apos;s, Page ID&apos;s</li>\n<li>Custom Post Type x1 preloaded for demonstration, supporting: Category, Tags, Post Thumbnails, Excerpts</li>\n<li>Dynamic Sidebar with x2 Widget Areas, and sidebar.php setup</li>\n<li>WordPress Thumbnail Support, no Plugin image cropping, custom Arrays and Thumbnail settings</li>\n<li>Custom Excerpt callbacks, with changeable callback numbers</li>\n<li>Replaced &apos;Read More&apos; button for custom Excerpt callbacks</li>\n<li>Demo Shortcodes included, with Nested Shortcode capability</li>\n<li>Add Slug to body class (Starkers Theme credit)</li>\n<li>wp_head functions stripped right down, remove excess injected junk</li>\n<li>All functions annotated, categorised into sections, filters, actions, shortcodes etc.</li>\n<li>Space for development, neatly organised code with Modules/External files</li>\n</ul>\n<h3>Theme Files and Functionality</h3>\n<ul>\n<li>Built in Pagination, no plugins (strips out prev + next post and gives page numbers)</li>\n<li>Optimised Google Analytics in footer (HTML5 Boilerplate)</li>\n<li>Widget Area Sidebar support, functions in place to get developing</li>\n<li>Custom Search Form included (searchform.php) - fully editable</li>\n<li>Tags support for showing Post Tags</li>\n<li>Category support for showing the Category of post</li>\n<li>Author support showing the author</li>\n<li>Demo Custom Page Template for expansion</li>\n</ul>\n<h2>Contributors</h2>\n<p>Thanks to all the awesome <a href=\"https://github.com/toddmotto/html5blank/graphs/contributors\">contributors</a>!</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/nekits/html5blank",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/nekits",
+          "text": "nekits"
+        }
+      ]
+    }
+  ]
+}
